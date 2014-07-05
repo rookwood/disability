@@ -50,7 +50,7 @@ var wholePersonImpairmentTable = {"0" : 0, "1.4"  : 0, "4.2"  : 1, "7.1"  : 2, "
 
 function getValueFromField(id)
 {
-	var value = parseInt($(id).val());
+	var value = round5($(id).val());
 
 	// AMA guidelines do not recognize values greater than 100 or under 0
 	if (value < 0)
@@ -120,4 +120,9 @@ function getWholePersonImpairment(binauralImpairment)
 			}
 		}
 	}
+}
+
+function round5(x)
+{
+    return (x % 5) >= 2.5 ? parseInt(x / 5) * 5 + 5 : parseInt(x / 5) * 5;
 }
