@@ -32,11 +32,7 @@ $(document).ready(function()
 
 		monauralImpairment.sort(function(a, b){return parseFloat(a) - parseFloat(b);});
 
-		console.log(monauralImpairment);
-
 		binauralImpairment = calculateBinauralImpairment(monauralImpairment[0], monauralImpairment[1]);
-
-		console.log(binauralImpairment);
 
 		wholePersonImpairment = getWholePersonImpairment(binauralImpairment);
 
