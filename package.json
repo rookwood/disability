@@ -27,7 +27,4 @@
     "webpack": "^1.12.11",
     "webpack-dev-server": "^1.14.1"
   },
-  "dependencies": {
-    "immutable": "^3.7.6"
-  }
 }
